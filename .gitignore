@@ -1,0 +1,39 @@
+# Python仮想環境 #
+#################
+env/
+*.pyc
+__pycache__/
+.vscode
+
+# LaTeXコンパイルファイル #
+##########################
+*latex
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.pdf
+*.tex
+
+# 一般的な除外ファイル #
+########################
+.DS_Store
+Thumbs.db
+
+# 画像ファイルの除外（必要に応じて）#
+###################################
+# report1/latex/images/*
+# report2/latex/images/*
+# report3/output_images/*
+# report4/images/*
+
+# 動画ファイルの除外（必要に応じて）#
+###################################
+# report4/movies/*
+# report4/output_movies/*
+
+# その他の除外ファイル（必要に応じて）#
+#####################################
+# report1/photo/*
+# report2/photo/*
+# report3/photo/*
