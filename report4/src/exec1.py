@@ -6,7 +6,6 @@ image = cv2.imread('./../images/golang.png')
 #画像のサイズ縮小
 height = image.shape[0]
 width = image.shape[1]
-# image = cv2.resize(image,(round(width/4), round(height/4)))
 
 image_copy1 = image.copy()
 #グレースケール化
@@ -25,6 +24,5 @@ cv2.imwrite('./../output_images/contour_image1.jpg', image)
 
 #実行結果
 cv2.imshow('Drawn contours', image)
-# cv2.imshow('Original', image_copy1)
 cv2.waitKey(0)
 cv2.destroyAllWindows()

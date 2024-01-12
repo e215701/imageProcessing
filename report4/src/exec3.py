@@ -1,10 +1,10 @@
 import cv2
 from matplotlib import pyplot as plt
  
-path = './../images/building.jpg'                              # 画像のパス
-i = cv2.imread(path, 0)                                        # 画像読み込み
+path = './../images/building.jpg'                    # 画像のパス
+i = cv2.imread(path, 0)                              # 画像読み込み
  
-i_max = 255                                                    # 最大輝度値
+i_max = 255                                          # 最大輝度値
  
 # 適応的閾値処理による二値化
 i_binary = cv2.adaptiveThreshold(i, i_max, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, \
