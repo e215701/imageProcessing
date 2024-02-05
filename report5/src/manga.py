@@ -33,3 +33,17 @@ manga = manga_filter(img, screen, 70, 140)
 
 # 結果を出力
 cv2.imwrite("./../output/manga.jpeg", manga)
+
+# テキストを追加
+font = cv2.FONT_HERSHEY_SIMPLEX
+text = "Blue Devils"
+org = (50, manga.shape[0] - 30) # 画像の左下に配置
+font_scale = 4
+color = (255, 0, 0) # 青色
+thickness = 8
+line_type = cv2.LINE_AA
+
+cv2.putText(manga, text, org, font, font_scale, color, thickness, line_type)
+
+# 結果を出力
+cv2.imwrite("./../output/manga2.jpeg", manga)
