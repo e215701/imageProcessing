@@ -68,7 +68,7 @@ def estimate_time_within_rectangle(center, image_shape, rectangle):
         minutes = (int((angle_deg // 30) * 5)) + 34
     elif 40 > int(angle_deg) >= 30 or int(angle_deg) >= 50:
         hours = (int(angle_deg % 30) % 12) + 1
-        minutes = (int((angle_deg // 30) * 5)) + 3
+        minutes = (int((angle_deg // 30) * 5)) + 2
     else:
         hours = (int(angle_deg % 30) % 12) - 1
         minutes = (int((angle_deg // 30) * 5))
