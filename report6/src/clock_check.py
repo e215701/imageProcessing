@@ -78,16 +78,16 @@ def estimate_time_within_rectangle(center, image_shape, rectangle):
 # 画像のパスと保存先のパスを指定して処理を実行
 image_number = input("画像のパスを入力してください: ")
 if image_number == "1":
-    image_path = './../images/clock1.jpg'
+    image_path = './../images/clocks/clock1.jpg'
     output_path = './../output/detected_clock1.jpg'
 elif image_number == "2":
-    image_path = './../images/clock2.jpg'
+    image_path = './../images/clocks/clock2.jpg'
     output_path = './../output/detected_clock2.jpg'
 elif image_number == "3":
-    image_path = './../images/clock3.jpg'
+    image_path = './../images/clocks/clock3.jpg'
     output_path = './../output/detected_clock3.jpg'
 elif image_number == "4":
-    image_path = './../images/clock4.jpg'
+    image_path = './../images/clocks/clock4.jpg'
     output_path = './../output/detected_clock4.jpg'
 
 detect_and_save_largest_clock(image_path, output_path)
